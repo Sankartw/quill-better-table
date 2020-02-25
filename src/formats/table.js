@@ -578,6 +578,7 @@ class TableContainer extends Container {
   }
 
   insertColumn(compareRect, colIndex, isRight = true, editorWrapper) {
+    console.log(colIndex)
     const [body] = this.descendants(TableBody)
     const [tableColGroup] = this.descendants(TableColGroup)
     const tableCols = this.descendants(TableCol)
